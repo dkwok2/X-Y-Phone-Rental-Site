@@ -1,6 +1,8 @@
 # X-Y-Phone-Rental-Site
-:globe_with_meridians: CSCE 464 Web Project (Version 1.0)
+:globe_with_meridians: CSCE 464 Web Project (Version 1.0) 
+<br>
 GitHub link: https://github.com/dkwok2/X-Y-Phone-Rental-Site.git
+<br>
 Note: Completed sections are mainly located in index.html and rateus.html. Other sections require improvement and further development but features include:
 - A responsive star rating on rateus.html
 - A typing animation on both index and rateus
