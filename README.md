@@ -12,11 +12,10 @@ Note: Completed sections are mainly located in index.html and rateus.html. Other
 
 
 TODO:
-- Add a product page (HIGH PRIORITY) with cart features
+- Add a product page (HIGH PRIORITY) with cart features(SQL, php)
 - Add a form page(both contact and rating) (Medium Priority)
 - Add a media query for responsiveness (HIGH PRIORITY)
 - Find ways to store forms and ratings / calculate averages and competitor prices (Low Priority)
 - Add a toggle day/night mode
 - Add a thank you for participating page
 - Add an animating border for the forms
-- Add a user page with favorites (HIGH Priority)
