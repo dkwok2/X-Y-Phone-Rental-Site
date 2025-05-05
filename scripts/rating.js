@@ -25,17 +25,20 @@ function updateStars(rating) {
             stars[i].style.color = "#002266";
         } else {
             stars[i].style.color = "#ccc";
-        }
+        }  
     }
+    document.getElementById("rating").value = rating;
 }
 
-function verifyCompletion(input){
+function verifyCompletion(){
     // Check to see if contents are empty
     if (nameInput.value.trim() == "" || emailInput.value.trim() == ""|| ratingValue === 0) {
         alert("Please fill in all fields and select a rating.");
-        return;
+        return false;
     }
+    return true;
 }
+
 
 function sendCompletion(){
     let totalWords = commentBox.value.trim().split(/\s+/).length
@@ -56,7 +59,9 @@ function resetValues(){
 countstars();
 
 form.addEventListener("submit", function(event){
-    verifyCompletion();
+    if (!verifyCompletion()) {
+        event.preventDefault();
+        return;
+    }
     sendCompletion();
-    resetValues();
 });

@@ -25,7 +25,7 @@
             <a href="contact.html">Contact Us</a>
         </div>
         <div class="header_item">
-            <a href="proddesc.html">Visit Product Page</a>
+            <a href="proddesc.php">Visit Product Page</a>
         </div>
         <div class="header_item">
             <a href="rateus.html">Rate Us</a>
@@ -35,7 +35,7 @@
     <main>
         <section class="feedback-form">
             <div class= "feedback-container">
-                <form class = "eval-form">
+                <form class = "eval-form" method="POST" action="ratingprocess.php">
                     <div class="eval-form-left">
                         <h1 id="rate-title">Rate Our Service Here!</h1>
                         <label for="name">Name</label>
@@ -55,8 +55,10 @@
                             <i class="fa-solid fa-star" style="color: #002266;"></i>
                             <i class="fa-solid fa-star" style="color: #002266;"></i>
                         </div>
+
+                        <input type="hidden" id="rating" name="rating" value="5">
                         <button type="submit">Submit Your Rating</button>
-                        <button><a href="index.html">Head Back to Main Page!</a></button>
+                        <button><a href="index.html">Head Back to Main Page!</button></a>
                     </div>
                     <div class="eval-form-right">
                         <img src="images/phonerate.png" alt="phonerating">
@@ -73,7 +75,7 @@
                 <h2>Our Links</h2>
                 <a href="about.html">About Us</a> <i class="fa-solid fa-user"></i>
                 |<a href="contact.html">Contact Us</a> <i class="fa-solid fa-phone"></i>
-                |<a href="proddesc.html">Shop</a> <i class="fa-solid fa-cart-shopping"></i>
+                |<a href="proddesc.php">Shop</a> <i class="fa-solid fa-cart-shopping"></i>
             </div>
             <div class="footer_item">
                 <h2>Follow Us</h2>

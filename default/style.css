@@ -191,3 +191,73 @@ nav{
 .footer_item a:hover::before{
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .headernavbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;   
+    }
+
+    .headernavbar h2 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    /* change direction of navigation bar for other pages as well*/
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    /* header changes for mobile*/
+    .header_item a {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .hero-container-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-content-left h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .hero-content-left p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .hero-content-left a {
+        font-size: 18px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-content-right {
+        justify-content: center;
+    }
+
+    .hero-content-right img {
+        width: 100%;
+        max-width: 900px;
+    }
+
+    /* footer changes for mobile*/
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_item h2 {
+        font-size: 28px;
+    }
+
+    .footer_item a {
+        font-size: 18px;
+    }
+}

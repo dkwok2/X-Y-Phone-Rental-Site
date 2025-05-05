@@ -1,8 +1,5 @@
-# X-Y-Phone-Rental-Site
-:globe_with_meridians: CSCE 464 Web Project (Version 1.0) 
-<br>
-GitHub link: https://github.com/dkwok2/X-Y-Phone-Rental-Site.git
-<br>
+:globe_with_meridians: CSCE 464 Web Project (Version 1.0)
+
 Note: Completed sections are mainly located in index.html and rateus.html. Other sections require improvement and further development but features include:
 - A responsive star rating on rateus.html
 - A typing animation on both index and rateus
@@ -12,10 +9,8 @@ Note: Completed sections are mainly located in index.html and rateus.html. Other
 
 
 TODO:
-- Add a product page (HIGH PRIORITY) with cart features(SQL, php)
 - Add a form page(both contact and rating) (Medium Priority)
 - Add a media query for responsiveness (HIGH PRIORITY)
-- Find ways to store forms and ratings / calculate averages and competitor prices (Low Priority)
+- Find ways to store forms and ratings (Low Priority)
 - Add a toggle day/night mode
 - Add a thank you for participating page
-- Add an animating border for the forms
