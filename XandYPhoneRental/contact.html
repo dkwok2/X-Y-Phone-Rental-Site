@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X&Y Phone Rental Services - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="default/style.css">
+    <link rel="stylesheet" href="default/contact.css">
+    <script src="scripts/main.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header class="headernavbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </a>
+        <h2>X&Y Phone Rental Services</h2>
+    </header>
+    <nav class="headernavbar">
+        <div class="header_item">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="header_item">
+            <a href="about.html">About</a>
+        </div>
+        <div class="header_item">
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="header_item">
+            <a href="proddesc.php">Visit Product Page</a>
+        </div>
+        <div class="header_item">
+            <a href="rateus.html">Rate Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact">
+            <div class="contact-content">
+                <!--See scripts/main.js for title-->
+                <h1 id="contact-title">Contact Us!</h1>
+                <p>Want to be part of the team or any questions or inquiries? Contact us here and we'll reply within 24 hours!</p>
+            </div>      
+            
+            <div class="contact-container">
+                <div class="info">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="context">
+                            <h2 id="getAddress">Address</h2>
+                            
+                            <p>34-41 Ave U, <br> Newark, New Jersey <br> 58581</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelopes-bulk"></i>
+                        </div>
+                        <div class="context">
+                            <h2 id="getEmail">Email</h2>
+                            <p>X&YSolutions@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="context">
+                            <h2 id="getPhone">Phone</h2>
+                            <p>402-123-3456</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="contactprocess.php" method="POST">
+                        <h1>Send Message</h1>
+                        <div class="user-input">
+                            <input type="text" name="name" required="required">
+                            <span>Name</span>
+                        </div>
+
+                        <div class="user-input">
+                            <input type="text" name="email" required="required">
+                            <span>Email</span>
+                        </div>
+
+                        <div class="user-input">
+                            <textarea type="text" name="message" required="required"></textarea>
+                            <span>Message</span>
+                        </div>
+
+                        <div class="user-input">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_item">
+                <h2>Our Links</h2>
+                <a href="about.html">About Us</a> <i class="fa-solid fa-user"></i>
+                |<a href="contact.html">Contact Us</a> <i class="fa-solid fa-phone"></i>
+                |<a href="proddesc.php">Shop</a> <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="footer_item">
+                <h2>Follow Us</h2>
+                <a href="#">Facebook<i class="fa-brands fa-square-facebook"></i></a> 
+                |<a href="#">Instagram <i class="fa-brands fa-instagram"></i> </a> 
+                |<a href="#">Twitter <i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+    </footer>
+    
+</body>
+</html>
