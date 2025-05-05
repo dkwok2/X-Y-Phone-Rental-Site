@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X&Y Phone Rental Services - Rate Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="default/style.css">
+    <link rel="stylesheet" href="default/rateus.css">
+</head>
+<body>
+    <header class="headernavbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </a>
+        <h2>X&Y Phone Rental Services</h2>
+    </header>
+    <nav class="headernavbar">
+        <div class="header_item">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="header_item">
+            <a href="about.html">About</a>
+        </div>
+        <div class="header_item">
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="header_item">
+            <a href="proddesc.php">Visit Product Page</a>
+        </div>
+        <div class="header_item">
+            <a href="rateus.html">Rate Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="feedback-form">
+            <div class= "feedback-container">
+                <form class = "eval-form" method="POST" action="ratingprocess.php">
+                    <div class="eval-form-left">
+                        <h1 id="rate-title">Rate Our Service Here!</h1>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your Email" required>
+    
+                        <label for="comment">Comments?</label>
+                        <textarea type="text" id="comment" name="comment" placeholder="Write your comment here!"></textarea>
+                        
+                        <label for="rating">Give us a rating!</label>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #002266;"></i>
+                            <i class="fa-solid fa-star" style="color: #002266;"></i>
+                            <i class="fa-solid fa-star" style="color: #002266;"></i>
+                            <i class="fa-solid fa-star" style="color: #002266;"></i>
+                            <i class="fa-solid fa-star" style="color: #002266;"></i>
+                        </div>
+
+                        <input type="hidden" id="rating" name="rating" value="5">
+                        <button type="submit">Submit Your Rating</button>
+                        <button><a href="index.html">Head Back to Main Page!</button></a>
+                    </div>
+                    <div class="eval-form-right">
+                        <img src="images/phonerate.png" alt="phonerating">
+                        <img src="images/phonesell.png" alt="phonesalesman">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer_container">
+            <div class="footer_item">
+                <h2>Our Links</h2>
+                <a href="about.html">About Us</a> <i class="fa-solid fa-user"></i>
+                |<a href="contact.html">Contact Us</a> <i class="fa-solid fa-phone"></i>
+                |<a href="proddesc.php">Shop</a> <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="footer_item">
+                <h2>Follow Us</h2>
+                <a href="#">Facebook<i class="fa-brands fa-square-facebook"></i></a> 
+                |<a href="#">Instagram <i class="fa-brands fa-instagram"></i> </a> 
+                |<a href="#">Twitter <i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+    </footer>
+
+    <!--Include scripts-->
+    <script src="scripts/rating.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
